@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Optic/static/css/main.2c1cd211.css",
+    "main.js": "/Optic/static/js/main.e9bc4b72.js",
+    "index.html": "/Optic/index.html",
+    "main.2c1cd211.css.map": "/Optic/static/css/main.2c1cd211.css.map",
+    "main.e9bc4b72.js.map": "/Optic/static/js/main.e9bc4b72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c1cd211.css",
+    "static/js/main.e9bc4b72.js"
+  ]
+}
