@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Optics/static/css/main.2c1cd211.css",
-    "main.js": "/Optics/static/js/main.bc67de80.js",
+    "main.js": "/Optics/static/js/main.385822ac.js",
     "index.html": "/Optics/index.html",
     "main.2c1cd211.css.map": "/Optics/static/css/main.2c1cd211.css.map",
-    "main.bc67de80.js.map": "/Optics/static/js/main.bc67de80.js.map"
+    "main.385822ac.js.map": "/Optics/static/js/main.385822ac.js.map"
   },
   "entrypoints": [
     "static/css/main.2c1cd211.css",
-    "static/js/main.bc67de80.js"
+    "static/js/main.385822ac.js"
   ]
 }
