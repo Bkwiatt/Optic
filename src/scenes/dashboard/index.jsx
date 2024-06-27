@@ -12,6 +12,7 @@ import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
+import PaidIcon from '@mui/icons-material/Paid';
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -55,7 +56,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="12,361"
+            title="361"
             subtitle="Proposals Sent"
             progress="0.75"
             increase="+14%"
@@ -74,7 +75,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="431,225"
+            title="$431,225"
             subtitle="Sales Obtained"
             progress="0.50"
             increase="+21%"
@@ -112,12 +113,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="29"
-            subtitle="Work Orders Open"
+            title="$66,724"
+            subtitle="Work Orders Invoiced"
             progress="0.80"
             increase="+43%"
             icon={
-              <TrafficIcon
+              <PaidIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -143,14 +144,14 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                Revenue Generated - 2024
               </Typography>
               <Typography
                 variant="h3"
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+                $3,259,342.32
               </Typography>
             </Box>
             <Box>
@@ -180,7 +181,7 @@ const Dashboard = () => {
             p="15px"
           >
             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
-              Recent Transactions
+              Recent Sales
             </Typography>
           </Box>
           {mockTransactions.map((transaction, i) => (
@@ -224,7 +225,7 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            Team Sales Goal
           </Typography>
           <Box
             display="flex"
@@ -232,13 +233,14 @@ const Dashboard = () => {
             alignItems="center"
             mt="25px"
           >
-            <ProgressCircle size="125" />
+            <ProgressCircle progress = "0.45" size="125" />
             <Typography
               variant="h5"
               color={colors.greenAccent[500]}
-              sx={{ mt: "15px" }}
+              sx={{ mt: "15px", "&:hover": { Content: "$7,800,000.00 revenue sales goal", color: "White", cursor: "pointer" }} }
             >
-              $48,352 revenue generated
+              $3,259,342.32 revenue generated
+              
             </Typography>
             <Typography>Includes extra misc expenditures and costs</Typography>
           </Box>
@@ -270,7 +272,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ marginBottom: "15px" }}
           >
-            Geography Based Traffic
+            City Based Sales
           </Typography>
           <Box height="200px">
             <GeographyChart isDashboard={true} />

@@ -42,7 +42,6 @@ const Sidebar = () => {
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
-  const ape = "Blank Ape";
 
   return (
     <Box
@@ -126,7 +125,7 @@ const Sidebar = () => {
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="Dashboard"
-              to="/"
+              to="/optics"
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
