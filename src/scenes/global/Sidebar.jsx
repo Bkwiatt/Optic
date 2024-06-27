@@ -171,8 +171,8 @@ const Sidebar = () => {
               {isCollapsed ? "Admin" : "Administration"}
             </Typography>
             <Item
-              title="Profile Form"
-              to="/form"
+              title="Buildings"
+              to="/buildings"
               icon={<PersonOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
